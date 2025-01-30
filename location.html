@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Location</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Our network" name="keywords">
+    <meta content="Global Reach, Local Expertise: Connecting the World" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon2.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        .accordion-item {
+            border: none;
+            margin-bottom: 1rem; /* Add gap between collapse items */
+        }
+
+        .accordion-button {
+            background-color: var(--secondary); /* Blue for buttons */
+            color: white;
+        }
+        .accordion-button:not(.collapsed) {
+            background-color: var(--light); /* Darker blue when expanded */
+        }
+        .accordion-body {
+            background-color: #f8f9fa; /* Light background for content */
+            color: #000;
+        }
+        .accordion {
+            width: 75%;
+            margin: 0 auto;
+        }
+        .accordion-item:last-of-type>.accordion-header .accordion-button.collapsed {
+            border-bottom-right-radius: 0 !important;
+            border-bottom-left-radius: 0 !important;
+        }
+        .accordion-item:first-of-type>.accordion-header .accordion-button {
+            border-top-left-radius: 0 !important;
+            border-top-right-radius: 0 !important;
+        }
+        /* Bootstrap method to change the arrow color */
+        .accordion-button::after {
+                    filter: brightness(0) invert(1); /* Make arrow white */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top p-0 trn">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5 ">
+            <h2 class="mb-2 text-white"><img class="logo" src="img/logo2.png" alt="May Jordan logo"></h2>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link">Home</a>
+                <a href="about.html" class="nav-item nav-link">About Us</a>
+                <div class="nav-item dropdown">
+                    <a href="service.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
+                    <div class="dropdown-menu fade-up m-0">
+                        <a href="service.html#air-freight" class="dropdown-item">Air Freight</a>
+                        <a href="service.html#ocean-freight" class="dropdown-item">Ocean Freight</a>
+                        <a href="service.html#trucking" class="dropdown-item">Domestic Trucking</a>
+                        <a href="service.html#warehousing" class="dropdown-item">Warehouse & Distribution</a>
+                        <a href="service.html#visibility" class="dropdown-item">Visibility & Reporting</a>
+                        <a href="service.html#custom" class="dropdown-item">Custom Brokerage</a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="industry.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Industry Verticals</a>
+                    <div class="dropdown-menu fade-up m-0">
+                        <a href="industry.html#retail" class="dropdown-item">Fashion & Retail</a>
+                        <a href="industry.html#technology" class="dropdown-item">Electronics</a>
+                        <a href="industry.html#manufacturing" class="dropdown-item">Industrial Products</a>
+                        <a href="industry.html#retail" class="dropdown-item">E-commerce</a>
+                        <a href="industry.html#toys-games" class="dropdown-item">Toys & Games</a>
+                        <a href="industry.html#home-improvement" class="dropdown-item">Home Improvement</a>
+                        <a href="industry.html#furniture" class="dropdown-item">Furniture</a>
+                    </div>
+                </div>
+                <a href="schedule.html" class="nav-item nav-link">Schedules</a>
+                <a href="location.html" class="nav-item nav-link active">Location</a>
+                <!--<a href="careers.html" class="nav-item nav-link">Careers</a>-->
+                <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid py-5 mt-n9" style="background-image: url('img/location-bg.jpg'); background-size: cover; height: 80vh;">
+        <h1 class="bottom-text text-center  display-5 text-white mb-3 animated slideInDown">Global Reach, Local Expertise: Connecting the World</h1>
+    </div>
+    <!-- Page Header End -->
+    <div class="container py-5">
+        <!--<h1 class="display-3 text-white mb-3 animated slideInDown">About Us</h1>-->
+        <nav aria-label="breadcrumb animated slideInDown">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a class="text-black" href="#">Home</a></li>
+                <li class="breadcrumb-item text-black active" aria-current="page">Location</li>
+            </ol>
+        </nav>
+    </div>
+
+    <!-- location Start -->
+    <div class="container-fluid overflow-hidden py-5 px-lg-0">
+        <div class="container about py-5 px-lg-0">
+            <div class="row g-5 mx-lg-0">
+                <div class="col-lg-6 ps-lg-0 wow fadeInLeft" data-wow-delay="0.1s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute img-fluid w-100 h-100" src="img/location-ny.jpg" style="object-fit: cover;" alt="New York">
+                    </div>
+                </div>
+                <div class="col-lg-6 about-text wow fadeInUp" data-wow-delay="0.3s">
+                    <h1 class="mb-5">NEW YORK</h1>
+                    <div class="">
+                        <h4 class="text-primary">MAY JORDAN LOGISTICS INC.  </h4>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>505 Northern Blvd, Suite 314,  Great Neck, NY 11021</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@mayjordan.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid overflow-hidden py-5 px-lg-0">
+        <div class="container about py-5 px-lg-0">
+            <div class="row g-5 mx-lg-0">
+                <div class="col-lg-6 ps-lg-0 wow fadeInLeft" data-wow-delay="0.1s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute img-fluid w-100 h-100" src="img/location-sg.jpg" style="object-fit: cover;" alt="Singapore">
+                    </div>
+                </div>
+                <div class="col-lg-6 about-text wow fadeInUp" data-wow-delay="0.3s">
+                    <h1 class="mb-5">SINGAPORE</h1>
+                    <div class="">
+                        <h4 class="text-primary">MAY JORDAN LOGISTICS PTE LTD.</h4>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>60 Paya Lebar Road # 12-08 Paya Lebar Square Singapore 409051</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@mayjordan.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid overflow-hidden py-5 px-lg-0">
+        <div class="container about py-5 px-lg-0">
+            <div class="row g-5 mx-lg-0">
+                <div class="col-lg-6 ps-lg-0 wow fadeInLeft" data-wow-delay="0.1s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute img-fluid w-100 h-100" src="img/location-mc.jpg" style="object-fit: cover;" alt="Singapore">
+                    </div>
+                </div>
+                <div class="col-lg-6 about-text wow fadeInUp" data-wow-delay="0.3s">
+                    <h1 class="mb-5">Mexico</h1>
+                    <div class="">
+                        <h4 class="text-primary">May Jordan Logistics S.A de C.V. </h4>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>C. Nte. 188 634, Pensador Mexicano, Venustiano Carranza, 15510 Ciudad de México, CDMX, Mexico</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@mayjordan.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid overflow-hidden py-5 px-lg-0">
+        <div class="container about py-5 px-lg-0">
+            <div class="row g-5 mx-lg-0">
+                <div class="col-lg-6 ps-lg-0 wow fadeInLeft" data-wow-delay="0.1s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute img-fluid w-100 h-100" src="img/location-sz.jpg" style="object-fit: cover;" alt="Singapore">
+                    </div>
+                </div>
+                <div class="col-lg-6 about-text wow fadeInUp" data-wow-delay="0.3s">
+                    <h1 class="mb-5">Shenzhen</h1>
+                    <div class="">
+                        <h4 class="text-primary">May Jordan Logistics (Shenzhen) Co.,Ltd</h4>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>601H, 6th Floor, Cunjin Building, No. 3005, South Dongmen Road, Jiabei Community, Nanhu Street, Luohu District, Shenzhen</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@mayjordan.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid overflow-hidden py-5 px-lg-0">
+        <div class="container about py-5 px-lg-0">
+            <div class="row g-5 mx-lg-0">
+                <div class="col-lg-6 ps-lg-0 wow fadeInLeft" data-wow-delay="0.1s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute img-fluid w-100 h-100" src="img/location-sh.jpg" style="object-fit: cover;" alt="Singapore">
+                    </div>
+                </div>
+                <div class="col-lg-6 about-text wow fadeInUp" data-wow-delay="0.3s">
+                    <h1 class="mb-5">Shanghai</h1>
+                    <div class="">
+                        <h4 class="text-primary">May Jordan Logistics (Shanghai) Co.,Ltd </h4>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Room 403, Building B, Rongjin Pujiang Science Park, No.399 Hengnan Rd, Shanghai,China 201112 </p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@mayjordan.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid overflow-hidden py-5 px-lg-0">
+        <div class="container about py-5 px-lg-0">
+            <div class="row g-5 mx-lg-0">
+                <div class="col-lg-6 ps-lg-0 wow fadeInLeft" data-wow-delay="0.1s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute img-fluid w-100 h-100" src="img/location-nb.jpg" style="object-fit: cover;" alt="Singapore">
+                    </div>
+                </div>
+                <div class="col-lg-6 about-text wow fadeInUp" data-wow-delay="0.3s">
+                    <h1 class="mb-5">Ningbo</h1>
+                    <div class="">
+                        <h4 class="text-primary">May Jordan Logistics (Ningbo) Co., Ltd</h4>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>RM1208, Hengyi Building, 1116 North Ring West Road, Jiangbei District, Ningbo 315033</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@mayjordan.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid overflow-hidden py-5 px-lg-0">
+        <div class="container about py-5 px-lg-0">
+            <div class="row g-5 mx-lg-0">
+                <div class="col-lg-6 ps-lg-0 wow fadeInLeft" data-wow-delay="0.1s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute img-fluid w-100 h-100" src="img/location-vn.jpg" style="object-fit: cover;" alt="Singapore">
+                    </div>
+                </div>
+                <div class="col-lg-6 about-text wow fadeInUp" data-wow-delay="0.3s">
+                    <h1 class="mb-5">Vietnam</h1>
+                    <div class="">
+                        <h4 class="text-primary">May Jordan Logistics (Vietnam) Co., Ltd </h4>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>3rd Fl, Office 3-03, Bcons Tower III, 178/31 Nguyen Van Thuong Street,  Ward 25, Binh Thanh District, Ho Chi Minh City, Vietnam</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@mayjordan.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- location End -->
+
+    <!-- our network Start -->
+    <div class="container-fluid page-header7 py-5 mt-n9">
+        <div class="container py-5">
+            <h1 class="text-center mb-4">Our Global Network</h1>
+            <p class="text-center mb-5">Our Global Network spans over 55 countries worldwide.</p>
+            
+            <div class="accordion" id="globalNetwork">
+                <!-- Americas Section -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingAmericas">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAmericas" aria-expanded="true" aria-controls="collapseAmericas">
+                            Americas
+                        </button>
+                    </h2>
+                    <div id="collapseAmericas" class="accordion-collapse collapse show" aria-labelledby="headingAmericas" data-bs-parent="#globalNetwork">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <div class="col-md-3">Argentina</div>
+                                <div class="col-md-3">Brazil</div>
+                                <div class="col-md-3">Canada</div>
+                                <div class="col-md-3">Chile</div>
+                                <div class="col-md-3">Colombia</div>
+                                <div class="col-md-3">Costa Rica</div>
+                                <div class="col-md-3">Dominican Republic</div>
+                                <div class="col-md-3">Mexico</div>
+                                <div class="col-md-3">Peru</div>
+                                <div class="col-md-3">Puerto Rico</div>
+                                <div class="col-md-3">United States</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Africa Section -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingAfrica">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAfrica" aria-expanded="false" aria-controls="collapseAfrica">
+                            Africa
+                        </button>
+                    </h2>
+                    <div id="collapseAfrica" class="accordion-collapse collapse" aria-labelledby="headingAfrica" data-bs-parent="#globalNetwork">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <div class="col-md-3">Algeria</div>
+                                <div class="col-md-3">Egypt</div>
+                                <div class="col-md-3">Morocco</div>
+                                <div class="col-md-3">Namibia</div>
+                                <div class="col-md-3">Nigeria</div>
+                                <div class="col-md-3">South Africa</div>
+                                <div class="col-md-3">Zambia</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Asia Pacific Section -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingAsiaPacific">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAsiaPacific" aria-expanded="false" aria-controls="collapseAsiaPacific">
+                            Asia Pacific
+                        </button>
+                    </h2>
+                    <div id="collapseAsiaPacific" class="accordion-collapse collapse" aria-labelledby="headingAsiaPacific" data-bs-parent="#globalNetwork">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <div class="col-md-3">Australia</div>
+                                <div class="col-md-3">China</div>
+                                <div class="col-md-3">India</div>
+                                <div class="col-md-3">Indonesia</div>
+                                <div class="col-md-3">Israel</div>
+                                <div class="col-md-3">Japan</div>
+                                <div class="col-md-3">Jordan</div>
+                                <div class="col-md-3">Korea</div>
+                                <div class="col-md-3">Malaysia</div>
+                                <div class="col-md-3">New Zealand</div>
+                                <div class="col-md-3">Philippines</div>
+                                <div class="col-md-3">Qatar</div>
+                                <div class="col-md-3">Saudi Arabia</div>
+                                <div class="col-md-3">Singapore</div>
+                                <div class="col-md-3">Sri Lanka</div>
+                                <div class="col-md-3">Thailand</div>
+                                <div class="col-md-3">United Arab Emirates</div>
+                                <div class="col-md-3">Vietnam</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Europe Section -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingEurope">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEurope" aria-expanded="false" aria-controls="collapseEurope">
+                            Europe
+                        </button>
+                    </h2>
+                    <div id="collapseEurope" class="accordion-collapse collapse" aria-labelledby="headingEurope" data-bs-parent="#globalNetwork">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <div class="col-md-3">Austria</div>
+                                <div class="col-md-3">Belgium</div>
+                                <div class="col-md-3">Denmark</div>
+                                <div class="col-md-3">France</div>
+                                <div class="col-md-3">Germany</div>
+                                <div class="col-md-3">Greece</div>
+                                <div class="col-md-3">Ireland</div>
+                                <div class="col-md-3">Italy</div>
+                                <div class="col-md-3">Netherlands</div>
+                                <div class="col-md-3">Norway</div>
+                                <div class="col-md-3">Poland</div>
+                                <div class="col-md-3">Portugal</div>
+                                <div class="col-md-3">Russia</div>
+                                <div class="col-md-3">Spain</div>
+                                <div class="col-md-3">Sweden</div>
+                                <div class="col-md-3">Switzerland</div>
+                                <div class="col-md-3">Turkey</div>
+                                <div class="col-md-3">Ukraine</div>
+                                <div class="col-md-3">United Kingdom</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- our network end -->
+
+    
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-light text-secondary footer pt-5 wow fadeIn" data-wow-delay="0.1s" style="margin-top: 6rem;">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-secondary mb-3">MAY JORDAN LOGISTICS INC. </h5>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>505 Northern Blvd, Suite 314,  Great Neck, NY 11021</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>(516) 304 5888</p>
+                    <p class="mb-2"><i class="fa fa-fax me-3"></i>(516) 304 5883</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@mayjordan.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href="https://www.linkedin.com/company/may-jordan-logistics"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-secondary mb-4">QUICK LINKS</h4>
+                    <a class="btn btn-link" href="about.html">About Us</a>
+                    <a class="btn btn-link" href="service.html">Customer Services</a>
+                    <a class="btn btn-link" href="contact.html">Get a Quote</a>
+                    <a class="btn btn-link" href="privacy.html">Privacy</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-secondary mb-4">OUR SERVICES</h4>
+                    <a class="btn btn-link" href="service.html#ocean-freight">Ocean Freight</a>
+                    <a class="btn btn-link" href="service.html#air-freight">Air Freight</a>
+                    <a class="btn btn-link" href="service.html#trucking">Domestic Trucking</a>
+                    <a class="btn btn-link" href="service.html#warehousing">Warehouse & Distribution</a>
+                    <a class="btn btn-link" href="service.html#custom">Custom Brokerage</a>
+                    <a class="btn btn-link" href="service.html#">Schedules</a>
+                </div>
+                  
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-secondary mb-4">INDUSTRY SECTORS</h4>
+                    <a class="btn btn-link" href="industry.html#retail">Fashion & Retail</a>
+                    <a class="btn btn-link" href="industry.html#technology">Electronics</a>
+                    <a class="btn btn-link" href="industry.html#manufacturing">Industrial Products</a>
+                    <a class="btn btn-link" href="industry.html#retail">E-commerces</a>
+                    <a class="btn btn-link" href="industry.html#toys-games">Toys & Games</a>
+                    <a class="btn btn-link" href="industry.html#home-improvement">Home Improvement</a>
+                    <a class="btn btn-link" href="industry.html#furniture">Furniture</a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <!-- Row to align both the images/title and copyright -->
+            <div class="row align-items-center" style="height: 100px;">
+                <!-- Images and title column with no margin left -->
+                <div class="col-md-6 d-flex align-items-center justify-content-start">
+                    <img src="img/ctpat.webp" alt="CTPAT" style="height: 30px; width: auto; margin-right: 8px;">
+                    <img src="img/FMC-Seal.webp" alt="FMC" style="height: 30px; width: auto; margin-right: 8px;">
+                    <h3 class="text-secondary mb-0" style="line-height: 1;">NOVCC</h3>
+                </div>
+        
+                <!-- Copyright column -->
+                <div class="col-md-6 d-flex align-items-center justify-content-end">
+                    <span class="copyright-text">&copy; <a class="border-bottom">2025 MAY JORDAN LOGISTICS INC.</a>, All Right Reserved.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-0 back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script>
+        // Function to handle scroll event and change navbar opacity
+            const navEl = document.querySelector('.navbar');
+        
+            window.addEventListener('scroll',() => {
+                if (window.scrollY >= 56) {
+                    navEl.classList.add('navbar-scrolled');
+                } else if (window.scrollY < 56) {
+                    navEl.classList.remove('navbar-scrolled');
+                }
+            });    
+    </script>
+</body>
+
+</html>
