@@ -827,7 +827,7 @@ video {
     #chat-widget {
       width: 80%;
       height: 300px;
-      bottom: 70px;
+      bottom: 100px;
       right: 10%;
       border-radius: 12px;
     }
