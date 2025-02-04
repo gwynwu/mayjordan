@@ -103,7 +103,7 @@ h5 {
     position: fixed;
     display: none;
     right: 90px;
-    bottom: 50px;
+    bottom: 20px;
     z-index: 110;
 }
 
@@ -764,7 +764,7 @@ video {
   /* Floating WhatsApp Button */
   #whatsapp-button {
     position: fixed;
-    bottom: 40px;
+    bottom: 20px;
     right: 20px;
     background-color: var(--whatsapp-green);
     border: none;
