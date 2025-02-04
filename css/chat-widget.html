@@ -1,0 +1,77 @@
+<!-- chat-widget.html -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+
+<div id="chat-widget" class="card shadow">
+  <!-- Header with Profile and Status -->
+  <div class="card-header d-flex align-items-center">
+    <div class="profile-container">
+      <img src="img/logo3.jpg" alt="Agent Profile" class="profile-img">
+      <span class="online-indicator"></span>
+    </div>
+    <div class="agent-info flex-grow-1">
+      <strong>May Jordan</strong>
+      <br><span class="status-text">Online</span>
+    </div>
+    <span class="ms-auto close-widget" role="button">&times;</span>
+  </div>
+
+  <!-- Chat Body -->
+  <div class="chat-body-upper flex-grow-1">
+    <div class="message-bubble" id="message-bubble">
+      Hi there 👋 <br> How can I help you?
+      <div class="message-time" id="message-time"></div>
+    </div>
+  </div>
+
+  <!-- Start Chat Button -->
+  <div class="chat-body-lower">
+    <a href="https://wa.me/19179456992" class="chat-button" target="_blank">
+      <img src="img/chat-bubble.svg" alt="chat bubble" style="width: 80%;">
+    </a>
+  </div>
+</div>
+
+<!-- Floating WhatsApp Button -->
+<button id="whatsapp-button" class="position-fixed">
+  <img src="img/logo-whatsapp.svg" alt="WhatsApp Logo" class="whatsapp-logo">
+  <span class="notice-indicator"></span>
+</button>
+
+<script>
+  // Initialize the chat widget functionality
+  (function() {
+    const whatsappButton = document.getElementById("whatsapp-button");
+    const chatWidget = document.getElementById("chat-widget");
+    const messageBubble = document.getElementById("message-bubble");
+
+    // Toggle chat widget visibility
+    whatsappButton.addEventListener("click", function() {
+      chatWidget.classList.toggle("show");
+
+      if (chatWidget.classList.contains("show")) {
+        setTimeout(() => {
+          messageBubble.classList.add("fade-message-in");
+        }, 300);
+      } else {
+        messageBubble.classList.remove("fade-message-in");
+      }
+    });
+
+    // Close the chat widget when the close icon is clicked
+    document.querySelector(".close-widget").addEventListener("click", function() {
+      chatWidget.classList.remove("show");
+      messageBubble.classList.remove("fade-message-in");
+    });
+
+    // Display real-time message time
+    function updateMessageTime() {
+      const now = new Date();
+      const hours = now.getHours().toString().padStart(2, '0');
+      const minutes = now.getMinutes().toString().padStart(2, '0');
+      document.getElementById("message-time").textContent = `${hours}:${minutes}`;
+    }
+    updateMessageTime();
+    setInterval(updateMessageTime, 60000);
+  })();
+</script>
