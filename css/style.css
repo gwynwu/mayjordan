@@ -821,7 +821,7 @@ video {
   /* Responsive styles */
   @media (max-width: 576px) {
     .back-to-top {
-        right: 50px;
+        right: 75px;
     }
 
     #chat-widget {
