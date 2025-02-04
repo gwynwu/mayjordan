@@ -739,37 +739,38 @@
         
     </div>
     <!-- Footer End -->   
-    <!-- Container for the Chat Widget -->
-    <div id="chat-widget-container"></div>
+
 
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-0 back-to-top"><i class="bi bi-arrow-up"></i></a>
+    
+    <!-- Container for the Chat Widget -->
+    <div id="chat-widget-container"></div>
+    <!-- Script to load chat-widget.html -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        // Fetch the chat-widget.html fragment
+        fetch("chat-widget.html")
+            .then(response => {
+            if (!response.ok) {
+                throw new Error("Network response was not ok");
+            }
+            return response.text();
+            })
+            .then(html => {
+            // Insert the fetched HTML into the container
+            document.getElementById("chat-widget-container").innerHTML = html;
 
-<!-- Script to load chat-widget.html -->
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-      // Fetch the chat-widget.html fragment
-      fetch("chat-widget.html")
-        .then(response => {
-          if (!response.ok) {
-            throw new Error("Network response was not ok");
-          }
-          return response.text();
-        })
-        .then(html => {
-          // Insert the fetched HTML into the container
-          document.getElementById("chat-widget-container").innerHTML = html;
-
-          // Optionally, if your inserted HTML includes <script> tags that need to run,
-          // you might need to reinitialize or execute them.
-          // In our case, the widget script is self-contained and will run on insertion.
-        })
-        .catch(error => {
-          console.error("Error loading chat widget:", error);
+            // Optionally, if your inserted HTML includes <script> tags that need to run,
+            // you might need to reinitialize or execute them.
+            // In our case, the widget script is self-contained and will run on insertion.
+            })
+            .catch(error => {
+            console.error("Error loading chat widget:", error);
+            });
         });
-    });
-  </script>
+    </script>
 
 
     <!-- JavaScript Libraries -->
