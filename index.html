@@ -51,6 +51,8 @@
             list-style-type: none;
         }
     </style>
+
+
 </head>
 
 <body>
@@ -150,7 +152,6 @@
     </div>
     <!-- Carousel End -->
 
-
     <!-- About Start -->
     <div class="container-fluid overflow-hidden py-5 px-lg-0">
         <div class="container about py-5 px-lg-0">
@@ -190,7 +191,7 @@
                 <div class="col-lg-8 wow fadeInUp text-center" data-wow-delay="0.1s">
                     <h6 class="text-primary text-uppercase mb-3">Features</h6>
                     <h1 class="mb-5">Trusted International Leader in Comprehensive Supply Chain Solutions</h1>
-                    <p class="mb-5">At May Jordan Logistics, our expansive network spans over 70 countries worldwide, enabling us to deliver seamless logistics solutions on a global scale. With a dedicated team of more than 200 skilled employees and 15+ strategically located offices, we are equipped to handle diverse logistics needs with efficiency and precision. Trusted by over 500 customers, our commitment to excellence and personalized service has made us a reliable partner for businesses seeking innovative logistics solutions.</p>
+                    <p class="mb-5">At May Jordan Logistics Inc., we leverage a vast global network to provide seamless, end-to-end logistics solutions that drive businesses success. With strategically positioned offices and a dedicated team worldwide, we navigate complex supply chains with unmatched efficiency and precision. Our customers trust us for our unwavering commitment to excellence, personalized service, and innovative solutions tailored to their unique needs. Whether managing intricate global shipments to optimizing supply chain performance, we are the reliable business partner businesses turn to for logistics solutions that deliver results.</p>
 
                 </div>
                 <!-- feature facts 4 boxes
@@ -739,7 +740,6 @@
     </div>
     <!-- Footer End -->
 
-
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-0 back-to-top"><i class="bi bi-arrow-up"></i></a>
 
@@ -771,7 +771,46 @@
                     navEl.classList.remove('navbar-scrolled');
                 }
             });    
+            
     </script>
+    <script>
+        console.log('Loading chat widget...');
+      
+        fetch('chat-widget.html')
+          .then(response => {
+            if (!response.ok) {
+              console.error('Failed to fetch chat-widget.html:', response.statusText);
+              throw new Error('Failed to load widget.');
+            }
+            console.log('Widget HTML loaded successfully');
+            return response.text();
+          })
+          .then(html => {
+            console.log('Inserting widget HTML into the page');
+            document.body.insertAdjacentHTML('beforeend', html);
+      
+            // Initialize widget functionality
+            const whatsappButton = document.getElementById('whatsapp-button');
+            const chatWidget = document.getElementById('chat-widget');
+      
+            whatsappButton.addEventListener('click', () => {
+              chatWidget.classList.toggle('show');
+              console.log('Toggling chat widget visibility');
+            });
+      
+            document.querySelector('.close-widget').addEventListener('click', () => {
+              chatWidget.classList.remove('show');
+              console.log('Chat widget closed');
+            });
+          })
+          .catch(error => {
+            console.error('Error loading chat widget:', error);
+          });
+      </script>
+      
+  
+
+  
 </body>
 
 </html>
