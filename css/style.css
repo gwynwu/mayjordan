@@ -104,7 +104,7 @@ h5 {
     display: none;
     right: 45px;
     bottom: 45px;
-    z-index: 1100;
+    z-index: 110;
 }
 
 
@@ -808,7 +808,7 @@ video {
     border-radius: 15px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     overflow: hidden;
-    z-index: 900;  /* Lower than #whatsapp-button and Back to Top button */
+    z-index: 90;  /* Lower than #whatsapp-button and Back to Top button */
     display: none;
   }
   
