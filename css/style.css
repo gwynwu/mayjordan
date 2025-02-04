@@ -733,4 +733,53 @@ video {
     justify-content: center;
 }
 
-    
+
+/*  chat widget */
+#chat-widget {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    width: 320px;
+    height: 350px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    z-index: 998;
+    display: none;
+  }
+  
+  #chat-widget.show {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .message-bubble {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 10px 15px;
+    display: inline-block;
+    margin: 5px 0;
+    max-width: 80%;
+    position: relative;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  #whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #294792;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+  }
+  
+  
