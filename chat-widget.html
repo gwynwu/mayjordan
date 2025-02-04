@@ -1,9 +1,7 @@
-<!-- chat-widget.html -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Optionally, remove these if your main page already includes them -->
 <link href="css/style.css" rel="stylesheet">
 
 <div id="chat-widget" class="card shadow">
-  <!-- Header with Profile and Status -->
   <div class="card-header d-flex align-items-center">
     <div class="profile-container">
       <img src="img/logo3.jpg" alt="Agent Profile" class="profile-img">
@@ -15,16 +13,12 @@
     </div>
     <span class="ms-auto close-widget" role="button">&times;</span>
   </div>
-
-  <!-- Chat Body -->
   <div class="chat-body-upper flex-grow-1">
     <div class="message-bubble" id="message-bubble">
       Hi there 👋 <br> How can I help you?
       <div class="message-time" id="message-time"></div>
     </div>
   </div>
-
-  <!-- Start Chat Button -->
   <div class="chat-body-lower">
     <a href="https://wa.me/19179456992" class="chat-button" target="_blank">
       <img src="img/chat-bubble.svg" alt="chat bubble" style="width: 80%;">
@@ -32,7 +26,6 @@
   </div>
 </div>
 
-<!-- Floating WhatsApp Button -->
 <button id="whatsapp-button" class="position-fixed">
   <img src="img/logo-whatsapp.svg" alt="WhatsApp Logo" class="whatsapp-logo">
   <span class="notice-indicator"></span>
