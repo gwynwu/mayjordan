@@ -1,5 +1,14 @@
-<!-- WhatsApp Live Chat Widget -->
-<div id="chat-widget" class="card shadow">
+<!-- chat-widget.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+  <!-- WhatsApp Live Chat Widget -->
+  <div id="chat-widget" class="card shadow">
     <div class="card-header d-flex align-items-center">
       <div class="profile-container">
         <img src="img/logo3.jpg" alt="Agent Profile" class="profile-img">
@@ -11,24 +20,36 @@
       </div>
       <span class="ms-auto close-widget" role="button">&times;</span>
     </div>
-  
+
     <div class="chat-body-upper flex-grow-1">
       <div class="message-bubble" id="message-bubble">
         Hi there 👋 <br> How can I help you?
         <div class="message-time" id="message-time"></div>
       </div>
     </div>
-  
+
     <div class="chat-body-lower">
       <a href="https://wa.me/19179456992" class="chat-button" target="_blank">
         <img src="img/chat-bubble.svg" alt="chat bubble" style="width: 80%;">
       </a>
     </div>
   </div>
-  
+
   <!-- Floating WhatsApp Button -->
   <button id="whatsapp-button" class="position-fixed">
     <img src="img/logo-whatsapp.svg" alt="WhatsApp Logo" class="whatsapp-logo">
     <span class="notice-indicator"></span>
   </button>
-  
+
+  <script>
+    document.getElementById('whatsapp-button').addEventListener('click', function() {
+      const widget = document.getElementById('chat-widget');
+      widget.classList.toggle('show');
+    });
+
+    document.querySelector('.close-widget').addEventListener('click', function() {
+      document.getElementById('chat-widget').classList.remove('show');
+    });
+  </script>
+</body>
+</html>
