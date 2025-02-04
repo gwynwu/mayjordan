@@ -764,7 +764,7 @@ video {
   /* Floating WhatsApp Button */
   #whatsapp-button {
     position: fixed;
-    bottom: 50px;
+    bottom: 40px;
     right: 20px;
     background-color: var(--whatsapp-green);
     border: none;
