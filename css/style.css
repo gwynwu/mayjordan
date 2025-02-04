@@ -104,7 +104,7 @@ h5 {
     display: none;
     right: 45px;
     bottom: 45px;
-    z-index: 110;
+    z-index: 1000;
 }
 
 
@@ -800,15 +800,15 @@ video {
   /* Chat Widget */
   #chat-widget {
     position: fixed;
-    bottom: 90px;
+    bottom: 120px;
     right: 20px;
     width: 320px;
     height: 350px;
     background-color: #fff;
     border-radius: 15px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    z-index: 90;  /* Lower than #whatsapp-button and Back to Top button */
+    overflow: visible;
+    z-index: 1100;  /* Lower than #whatsapp-button and Back to Top button */
     display: none;
   }
   
