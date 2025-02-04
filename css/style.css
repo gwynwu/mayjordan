@@ -102,8 +102,8 @@ h5 {
 .back-to-top {
     position: fixed;
     display: none;
-    right: 80px;
-    bottom: 60px;
+    right: 90px;
+    bottom: 50px;
     z-index: 110;
 }
 
