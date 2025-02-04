@@ -752,7 +752,9 @@
 
     // Adjust iframe height dynamically after it loads
     iframe.onload = function() {
-    iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+        const contentHeight = iframe.contentWindow.document.body.scrollHeight;
+        console.log('Calculated content height:', contentHeight);
+        iframe.style.height = contentHeight + 'px';
     };
     </script>
 
