@@ -743,80 +743,81 @@
 
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-0 back-to-top"><i class="bi bi-arrow-up"></i></a>
-<!-- Container for the Chat Widget -->
-<div id="chat-widget-container"></div>
-    
-<!-- Script to load and initialize the chat widget -->
-<script>
-    // Wait for the DOM to be fully loaded
-    document.addEventListener("DOMContentLoaded", function() {
-      fetch("chat-widget.html")
-        .then(response => {
-          if (!response.ok) {
-            throw new Error("Network response was not ok");
-          }
-          return response.text();
-        })
-        .then(html => {
-          // Inject the HTML fragment into the container
-          document.getElementById("chat-widget-container").innerHTML = html;
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-2 back-to-top"><i class="bi bi-arrow-up"></i></a>
 
-          // Initialize the chat widget functionality
-          initializeChatWidget();
-        })
-        .catch(error => {
-          console.error("Error loading chat widget:", error);
+    <!-- Container for the Chat Widget -->
+    <div id="chat-widget-container"></div>
+        
+    <!-- Script to load and initialize the chat widget -->
+    <script>
+        // Wait for the DOM to be fully loaded
+        document.addEventListener("DOMContentLoaded", function() {
+        fetch("chat-widget.html")
+            .then(response => {
+            if (!response.ok) {
+                throw new Error("Network response was not ok");
+            }
+            return response.text();
+            })
+            .then(html => {
+            // Inject the HTML fragment into the container
+            document.getElementById("chat-widget-container").innerHTML = html;
+
+            // Initialize the chat widget functionality
+            initializeChatWidget();
+            })
+            .catch(error => {
+            console.error("Error loading chat widget:", error);
+            });
         });
-    });
 
-    // Define a function to attach event listeners and initialize the widget
-    function initializeChatWidget() {
-      const whatsappButton = document.getElementById("whatsapp-button");
-      const chatWidget = document.getElementById("chat-widget");
-      const messageBubble = document.getElementById("message-bubble");
+        // Define a function to attach event listeners and initialize the widget
+        function initializeChatWidget() {
+        const whatsappButton = document.getElementById("whatsapp-button");
+        const chatWidget = document.getElementById("chat-widget");
+        const messageBubble = document.getElementById("message-bubble");
 
-      if (!whatsappButton || !chatWidget || !messageBubble) {
-        console.error("Chat widget elements not found. Ensure the IDs match.");
-        return;
-      }
-
-      // Toggle chat widget visibility on WhatsApp button click
-      whatsappButton.addEventListener("click", function() {
-        chatWidget.classList.toggle("show");
-
-        if (chatWidget.classList.contains("show")) {
-          setTimeout(() => {
-            messageBubble.classList.add("fade-message-in");
-          }, 300);
-        } else {
-          messageBubble.classList.remove("fade-message-in");
+        if (!whatsappButton || !chatWidget || !messageBubble) {
+            console.error("Chat widget elements not found. Ensure the IDs match.");
+            return;
         }
-      });
 
-      // Close the widget when the close icon is clicked
-      const closeIcon = document.querySelector(".close-widget");
-      if (closeIcon) {
-        closeIcon.addEventListener("click", function() {
-          chatWidget.classList.remove("show");
-          messageBubble.classList.remove("fade-message-in");
+        // Toggle chat widget visibility on WhatsApp button click
+        whatsappButton.addEventListener("click", function() {
+            chatWidget.classList.toggle("show");
+
+            if (chatWidget.classList.contains("show")) {
+            setTimeout(() => {
+                messageBubble.classList.add("fade-message-in");
+            }, 300);
+            } else {
+            messageBubble.classList.remove("fade-message-in");
+            }
         });
-      }
 
-      // Function to update the message time in real-time
-      function updateMessageTime() {
-        const now = new Date();
-        const hours = now.getHours().toString().padStart(2, '0');
-        const minutes = now.getMinutes().toString().padStart(2, '0');
-        const messageTime = document.getElementById("message-time");
-        if (messageTime) {
-          messageTime.textContent = `${hours}:${minutes}`;
+        // Close the widget when the close icon is clicked
+        const closeIcon = document.querySelector(".close-widget");
+        if (closeIcon) {
+            closeIcon.addEventListener("click", function() {
+            chatWidget.classList.remove("show");
+            messageBubble.classList.remove("fade-message-in");
+            });
         }
-      }
-      updateMessageTime();
-      setInterval(updateMessageTime, 60000);
-    }
-  </script>
+
+        // Function to update the message time in real-time
+        function updateMessageTime() {
+            const now = new Date();
+            const hours = now.getHours().toString().padStart(2, '0');
+            const minutes = now.getMinutes().toString().padStart(2, '0');
+            const messageTime = document.getElementById("message-time");
+            if (messageTime) {
+            messageTime.textContent = `${hours}:${minutes}`;
+            }
+        }
+        updateMessageTime();
+        setInterval(updateMessageTime, 60000);
+        }
+    </script>
 
 
     <!-- JavaScript Libraries -->
