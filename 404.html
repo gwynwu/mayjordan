@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Logistica - Shipping Company Website Template</title>
+    <title>404 page</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -75,6 +75,7 @@
                         <a href="industry.html#toys-games" class="dropdown-item">Toys & Games</a>
                         <a href="industry.html#home-improvement" class="dropdown-item">Home Improvement</a>
                         <a href="industry.html#furniture" class="dropdown-item">Furniture</a>
+                        <a href="industry.html#automative-parts" class="dropdown-item">Automative Parts</a>
                     </div>
                 </div>
                 <a href="schedule.html" class="nav-item nav-link">Schedules</a>
@@ -161,6 +162,7 @@
                     <a class="btn btn-link" href="industry.html#toys-games">Toys & Games</a>
                     <a class="btn btn-link" href="industry.html#home-improvement">Home Improvement</a>
                     <a class="btn btn-link" href="industry.html#furniture">Furniture</a>
+                    <a class="btn btn-link" href="industry.html#automative-parts">Automative Parts</a>
                     
                 </div>
             </div>
@@ -200,6 +202,19 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script>
+        // Function to handle scroll event and change navbar opacity
+            const navEl = document.querySelector('.navbar');
+        
+            window.addEventListener('scroll',() => {
+                if (window.scrollY >= 56) {
+                    navEl.classList.add('navbar-scrolled');
+                } else if (window.scrollY < 56) {
+                    navEl.classList.remove('navbar-scrolled');
+                }
+            });    
+    </script>
+    
 </body>
 
 </html>

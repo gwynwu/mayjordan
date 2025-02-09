@@ -29,6 +29,32 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <style>
+        /* Parent container must have a defined height */
+    /* Ensure each section has a minimum height and is positioned relatively */
+.section-container {
+  position: relative;
+  min-height: 400px; /* Adjust this value as needed */
+}
+
+/* On mobile screens, position the text at the bottom */
+@media (max-width: 991.98px) {
+  .section-container .section-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem; /* Adjust padding as needed */
+    /* Optionally add a semi-transparent background for better text contrast */
+    background: rgba(255, 255, 255, 0.8);
+  }
+  h6 {
+    color: var(--primary);
+  }
+}
+
+    
+    </style>
 </head>
 
 <body>
@@ -74,6 +100,7 @@
                         <a href="industry.html#toys-games" class="dropdown-item">Toys & Games</a>
                         <a href="industry.html#home-improvement" class="dropdown-item">Home Improvement</a>
                         <a href="industry.html#furniture" class="dropdown-item">Furniture</a>
+                        <a href="industry.html#automative-parts" class="dropdown-item">Automative Parts</a>
                     </div>
                 </div>
                 <a href="schedule.html" class="nav-item nav-link">Schedules</a>
@@ -87,7 +114,7 @@
 
     <!-- Page Header Start -->
     <div class="container-fluid page-header4 py-5 mt-n9" >
-        <h1 class="bottom-text text-center  col-lg-7 display-5 text-white mb-3 animated slideInDown">Comprehensive Logistics Solutions Tailored to Your Needs</h1>
+        <h1 class="bottom-text text-center  col-lg-7 display-5 mb-3 animated slideInDown ">Comprehensive Logistics Solutions Tailored to Your Needs</h1>
     </div>
     <!-- Page Header End -->
     <div class="container py-5">
@@ -102,9 +129,9 @@
 
 
     <!-- air freight Start -->
-    <div id="air-freight" class="container-xxl py-5 bg-light2" style="background-image: url('img/service-1.jpg'); background-size: cover;">
+    <div id="air-freight" class="section-container position-relative py-5 bg-light2" style="background-image: url('img/service-1.jpg'); background-size: cover;">
         <div class="container py-5">
-            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <div class="section-text text-center text-white wow fadeInUp" data-wow-delay="0.1s">
                 <h6 class="text-primary text-uppercase">Air Freight</h6>
                 <h1 class="mb-5">Fast-Track Solutions for Global Shipping</h1>
             </div>
@@ -148,9 +175,9 @@
     <!-- air freight End -->
 
     <!-- ocean freight Start -->
-    <div id="ocean-freight" class="container-xxl py-5 bg-light2" style="background-image: url('img/service-2.jpg'); background-size: cover;">
+    <div id="ocean-freight" class="section-container position-relative py-5 bg-light2" style="background-image: url('img/service-2.jpg'); background-size: cover;">
         <div class="container py-5">
-            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <div class="section-text text-center text-white wow fadeInUp" data-wow-delay="0.1s">
                 <h6 class="text-primary text-uppercase">Ocean Freight</h6>
                 <h1 class="mb-5">Comprehensive Solutions for Global Shipping</h1>
             </div>
@@ -195,9 +222,9 @@
     <!-- ocean freight End -->
 
     <!-- trucking Start -->
-    <div id="trucking" class="container-xxl py-5 bg-light2" style="background-image: url('img/service-3.jpg'); background-size: cover;">
+    <div id="trucking" class="section-container position-relative py-5 bg-light2" style="background-image: url('img/service-3.jpg'); background-size: cover;">
         <div class="container py-5">
-            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <div class="section-text text-center text-white wow fadeInUp" data-wow-delay="0.1s">
                 <h6 class="text-primary text-uppercase">Domestic Trucking</h6>
                 <h1 class="mb-5">Reliable Solutions for Nationwide Transport</h1>
             </div>
@@ -240,11 +267,11 @@
     <!-- trucking End -->
      
     <!--  Warehouse & Distribution Start -->
-    <div id="warehousing" class="container-xxl py-5 bg-light2" style="background-image: url('img/warehouse1.jpg'); background-size: cover;">
+    <div id="warehousing" class="section-container position-relative py-5 bg-light2" style="background-image: url('img/warehouse1.jpg'); background-size: cover;">
         <div class="container py-5">
-            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="text-white text-uppercase">Warehousing & Distribution</h6>
-                <h1 class="mb-5 text-white">Efficient Solutions for Storage and Fulfillment</h1>
+            <div class="section-text text-center text-white wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="text-primary text-uppercase">Warehousing & Distribution</h6>
+                <h1 class="mb-5">Efficient Solutions for Storage and Fulfillment</h1>
             </div>
         </div>
     </div>        
@@ -287,11 +314,11 @@
     <!-- warehousing & distributions End -->
 
     <!--  Visibility & Reporting Start -->
-    <div id="visibility" class="container-xxl py-5 bg-light2" style="background-image: url('img/tracking1.jpg'); background-size: cover;">
+    <div id="visibility" class="section-container position-relative py-5 bg-light2" style="background-image: url('img/tracking1.jpg'); background-size: cover;">
         <div class="container py-5">
-            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="text-uppercase text-white">Visibility & Reporting</h6>
-                <h1 class="mb-5 text-white">Real-Time Tracking and Reporting Solutions</h1>
+            <div class="section-text text-center text-white wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="text-uppercase text-primary">Visibility & Reporting</h6>
+                <h1 class="mb-5">Real-Time Tracking and Reporting Solutions</h1>
             </div>
         </div>
     </div>        
@@ -334,11 +361,11 @@
     <!-- Visibility & Reporting End -->
 
     <!--  Custom Brokerage Start -->
-    <div id="custom" class="container-xxl py-5 bg-light2" style="background-image: url('img/service-6.jpg'); background-size: cover;">
+    <div id="custom" class="section-container position-relative py-5 bg-light2" style="background-image: url('img/service-6.jpg'); background-size: cover;">
         <div class="container py-5">
-            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="text-uppercase text-white">Custom Brokerage</h6>
-                <h1 class="mb-5 text-white">Expertise in International Trade Compliance</h1>
+            <div class="section-text text-center text-white wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="text-primary text-uppercase ">Custom Brokerage</h6>
+                <h1 class="mb-5 ">Expertise in International Trade Compliance</h1>
             </div>
         </div>
     </div>        
@@ -420,6 +447,7 @@
                     <a class="btn btn-link" href="industry.html#toys-games">Toys & Games</a>
                     <a class="btn btn-link" href="industry.html#home-improvement">Home Improvement</a>
                     <a class="btn btn-link" href="industry.html#furniture">Furniture</a>
+                    <a class="btn btn-link" href="industry.html#automative-parts">Automative Parts</a>
                     
                 </div>
             </div>
