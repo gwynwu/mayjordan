@@ -130,7 +130,7 @@ h5 {
 
 /*** Button ***/
 .btn {
-    font-weight: 400;
+    font-weight: 500;
     transition: .5s;
 }
 
@@ -181,9 +181,14 @@ h5 {
     margin-right: 30px;
     padding: 25px 0;
     color: #000000;
+    font-weight: 500;
     font-size: 15px;
     text-transform: uppercase;
     outline: none;
+}
+
+.dropdown-item {
+    font-weight: 500 !important;
 }
 
 .navbar-light .navbar-nav .nav-link:hover
@@ -354,30 +359,39 @@ img.logo {
     border-color: var(--primary);
 }
 
-
+/*** About us ***/
 .page-header {
-    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(189, 189, 189, 0.5)), url(../img/page-header-2.jpg) center center no-repeat;
-    background-size: cover;
-}
-.page-header2 {
-    background: url(../img/location-bg.jpg) center center no-repeat;
-    background-size: cover;
-}
-.page-header3 {
-    background: linear-gradient(rgba(255, 255, 255, 0.869), rgba(191, 158, 240, 0.12)),url(../img/page-header-4.jpeg) center center no-repeat;
-    background-size: cover;
-}
-.page-header4 {
-    background: url(../img/service-header.jpg) center center no-repeat;
-    background-size: cover;
-}
-.page-header5 {
-    background: url(../img/contact-us.jpg) center center no-repeat;
+    background: linear-gradient(rgba(255, 255, 255, 1), rgba(102, 141, 185, 0.1)), url(../img/page-header-2.jpg) center center no-repeat;
     background-size: cover;
 }
 
+/*** location ***/
+.page-header2 {
+    background: rgba(132, 133, 142, 0.5), url(../img/location-bg.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+/*** schedule ***/
+.page-header3 {
+    background: linear-gradient(rgba(255, 255, 255, 1), rgba(102, 141, 185, 0.5)), url(../img/page-header-4.jpeg) center center no-repeat;
+    background-size: cover;
+}
+
+/*** service ***/
+.page-header4 {
+    background: linear-gradient(rgba(255, 255, 255, 1), rgba(102, 141, 185, 0.3)), url(../img/service-header.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+/*** contact ***/
+.page-header5 {
+    background: linear-gradient(rgba(255, 255, 255, 1), rgba(102, 141, 185, 0.3)),url(../img/contact-us.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+/*** industry ***/
 .page-header6 {
-    background: url(../img/page-header-6.jpeg) center center no-repeat;
+    background: linear-gradient(rgba(255, 255, 255, 1), rgba(102, 141, 185, 0.6)),url(../img/page-header-7.jpg) center center no-repeat;
     background-size: cover;
 }
 .breadcrumb-item + .breadcrumb-item::before {
@@ -550,6 +564,8 @@ img.logo {
     background: var(--light);
     border-color: var(--primary);
 }
+
+
 
 
 /*** Contact ***/
